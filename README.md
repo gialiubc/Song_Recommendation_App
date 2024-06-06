@@ -23,9 +23,9 @@ I have upload all the files and folders that I used to create the app. Everythin
   - Resources folder : includes a scaler saved for scaling the vectors.
 
 ## Data ETL and Vector Database
-The data used for this project is based on the project Jammin'_With_Spotify which is a comparable study of a song recommendation system using different machine learning models. The data is slightly modified in order to adjust to this project. The original ETL of the dataset will not be explained here, and for more details about how to obtain the dataset please go to https://github.com/gialiubc/Jammin_With_Spotify/tree/main.
+The data used for this project is based on the project Jammin'_With_Spotify. The data is slightly modified in order to adjust to this project. The original ETL of the dataset will not be explained here, and for more details please go to https://github.com/gialiubc/Jammin_With_Spotify/tree/main.
 
-Each song track has feautres such as danceability, energy, key, mode (minor or major), speechiness, acousticness, instrumentalness, liveness, valence, tempo, duration_ms, and time_signature (beats per bar), which is considered to be its 'numerical' representation, so we use these features as its search vectors. We also need track information which we can call from Spotify API given the track_uri. 
+Each song track has feautres such as danceability, energy, key, mode (minor or major), speechiness, acousticness, instrumentalness, liveness, valence, tempo, duration_ms, and time_signature (beats per bar), which is considered to be its 'numerical' representation, so we use these features as its search vectors.
 
 Therefore, we create two datasets as output. One contains the scaled track features (embeddings) as vector information of each track. The other one contains track information such as track uri, track_href etc.
 
